@@ -1,6 +1,6 @@
 import numpy as np
 
-def getBondPrice(y, face, couponRate, m, ppy=1):
+def getBondPrice(y, face, couponRate, m, ppy):
     ccf=couponRate*face/ppy
     times=np.arange(1,m+1)
     pvf=np.power(1+y, times)
